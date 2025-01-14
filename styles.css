@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #011627;
+    --input-color: #01162763;
+    --custom-color: #0facd7;
+    --card-color: #ededff; 
+}
+.dark-mode-active{
+    --primary-color: #0d0c1d;
+    --secondary-color: #ffffff;
+}
+body {
+    background-color: var(--primary-color);
+}
+.container {
+    width: 90%;
+    margin-inline: auto;
+    
+}
+.navbar {
+    padding: 10px 0 10px 0;
+    background-color: var(--custom-color);
+    position: fixed;
+    width: 100%;
+    
+    
+}
+header .navbar .box-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header .navbar .box-navbar .logo h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+header .navbar .box-navbar .logo span{
+    color: var(--secondary-color);
+}
+header .navbar .box-navbar .menu{
+    display: flex;
+    column-gap: 30px;
+}
+header .navbar .box-navbar .menu li{
+    list-style-type: none;
+    
+}
+header .navbar .box-navbar .menu li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1rem;
+}
+header .navbar .box-navbar .menu li a:hover{
+    color: var(--primary-color);
+}
+header .navbar .box-navbar .fa-bars {
+    font-size: 24px;
+    color: var(--secondary-color);
+    display: none;
+}
+header .navbar .box-navbar .btn-switch{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+header .navbar .box-navbar .btn-switch .light-mode.active{
+    display: none;
+}
+header .navbar .box-navbar .btn-switch .dark-mode{
+    display: none;
+}
+header .navbar .box-navbar .btn-switch .dark-mode.active{
+    display: block;
+    color: var(--secondary-color);
+}
+.hero{
+    width: 100%;
+    padding-top: 150px;
+}
+.hero .box-hero{
+    text-align: center;
+}
+.hero .box-hero h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+.hero .box-hero p{
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+.hero .box-hero .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon a{
+    font-size: 30px;
+    padding: 10px;
+    color: var(--secondary-color);
+}
+.icon a:hover{
+    background-color: var(--custom-color);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+.hero .box-hero .btn button{
+    min-width: 120px;
+    height: 45px;
+    margin-top: 20px;
+    background-color: var(--custom-color);
+    cursor: pointer;
+    margin-right: 2px;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 0 15px;
+    transition: .4s;
+}
+.hero .box-hero .btn button:hover{
+    background-color: #1dc4f3;
+}
+.hero .box-hero .btn a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.hero .box-hero .hero-img{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+
+}
+.hero .box-hero .hero-img img{
+    width: 100%;
+    height: 100%;
+}
+.mygallery .box-gallery{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.mygallery .box-gallery h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+.mygallery .box-gallery .gallery-img{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+.mygallery .box-gallery .gallery-img img{
+    width: 100%;
+    height: 100%;
+    
+}
+.quotes .box-quotes{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.quotes h1{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1.1;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+.quotes .box-quotes .quote1{
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background-color: var(--card-color);
+    padding: 30px;
+    border-radius: 10px;
+    transition: .4s;
+}    
+.quotes .box-quotes .quote2{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    display: inline-block;
+    background-color: var(--card-color);
+    padding: 30px;
+    border-radius: 10px;
+    transition: .2s;
+}
+.quotes .box-quotes .quote1:hover{
+    background-color: #c1c1ec;
+}
+.quotes .box-quotes .quote2:hover{
+    background-color: #c1c1ec;
+}
+.quotes .box-quotes em{
+    margin-bottom: 20px;
+    color: black;
+    font-size: 20px;
+}
+.testimoni h1{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1.1;
+    font-weight: 900;
+    color: var(--secondary-color);
+}
+
+footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--custom-color);
+    color: white;
+    font-size: 15px;
+    margin-top: 50px;
+    text-align: center;
+}
+.icon-wa{
+    position: fixed;
+    margin-bottom: 50px;
+    text-decoration: none;
+    right: 1rem;
+    bottom: 3rem;
+    padding: .3rem .4rem;
+    background-color: #07e630;
+    border-radius: .4rem;
+    transition: .4s;
+    opacity: 0;
+    pointer-events: none;
+}
+.icon-wa:hover{
+    background-color: #68ff84;
+}
+.fa-whatsapp{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.icon-wa.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: 6rem;
+    padding: .3rem;
+    background-color: var(--secondary-color);
+    border-radius: .4rem;
+    transition: .4s;
+    opacity: 0;
+    text-decoration: none;
+    pointer-events: none;
+}
+.scrolltop:hover{
+    background-color: var(--custom-color);
+}
+.scrolltop.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.scroll-icon{
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 990px) {
+    header .navbar .box-navbar .fa-bars{
+        display: block;
+        
+    }
+    header .navbar .box-navbar .menu{
+       position: absolute;
+       width: 100%;
+       background-color: var(--custom-color);
+       height: 200px;
+       transition: all .2s ease-in-out;
+       flex-direction: column;
+       justify-content: center;
+       transform: translateX(50%);
+       top: 70px;
+       right: 50%;
+       text-align: center;
+       row-gap: 20px;
+       opacity: 0;
+       transition: all .3s ease;
+       
+       
+    }
+    header .navbar .box-navbar .menu.menu-active{
+        top: 68px;
+        opacity: 1;
+        border-top: 5px solid var(--secondary-color);
+    }    
+    header .navbar .box-navbar .menu li a{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    header .navbar .box-navbar .menu li a:hover{
+        color: var(--primary-color);
+    }
+    header .navbar .box-navbar .btn-switch{
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+    .hero .box-hero h1{
+        font-size: 55px;
+    }
+    .mygallery .box-gallery h1{
+        font-size: 55px;
+    }
+    .tentang .box-tentang h1{
+        font-size: 55px;
+    }
+}
+@media  screen and (max-width: 768px) {
+    .hero .box-hero h1{
+        font-size: 45px;
+    }
+    .hero .box-hero .btn button{
+        min-width: 100px;
+    }
+    .mygallery .box-gallery h1{
+        font-size: 45px;
+    }
+    .tentang .box-tentang h1{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .hero .box-hero h1{
+        font-size: 35px;
+    }
+    .mygallery .box-gallery h1{
+        font-size: 35px;
+    }
+    .tentang .box-tentang h1{
+        font-size: 35px;
+    }
+    .hero .box-hero p{
+        padding-inline: 20px;
+    }
+    .quotes .box-quotes{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .quotes h1{
+        font-size: 40px;
+    }
+    .quotes .box-quotes .quote1{
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        background-color: var(--card-color);
+        padding: 30px;
+        border-radius: 10px;
+        transition: .4s;
+    }    
+    .quotes .box-quotes .quote2{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 30px;
+        display: inline-block;
+        background-color: var(--card-color);
+        padding: 30px;
+        border-radius: 10px;
+        transition: .4s;
+    } 
+}
+@media screen and (max-width: 475px) {
+    .hero .box-hero p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .hero .box-hero .btn input{
+        width: 100%;
+    }
+}
